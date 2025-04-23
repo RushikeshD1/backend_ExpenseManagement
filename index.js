@@ -9,7 +9,7 @@ const expRoute = require("./routes/expenseRoute");
 const app = express();
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: process.env.FRONTND_URL,
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]
 }))
